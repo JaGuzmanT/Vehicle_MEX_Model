@@ -1,208 +1,237 @@
-Logging results to D:\Vehicle_MEX_Dataset\runs\classify\Vehicle_MEX_Dataset\Improvement_1
+train: New cache created: D:\Vehicle_MEX_Dataset\Vehicle_classification.v1\train.cache
+Model loaded successfully... 🙋
+Model loaded successfully... 🙋
+Model loaded successfully... 🙋
+Model loaded successfully... 🙋
+val: Fast image access  (ping: 0.10.0 ms, read: 637.9194.4 MB/s, size: 63.4 KB)
+val: Scanning D:\Vehicle_MEX_Dataset\Vehicle_classification.v1\valid... 621 images, 0 corrupt: 100% ━━━━━━━━━━━━ 621/621  0.0s
+Model loaded successfully... 🙋
+Model loaded successfully... 🙋
+Model loaded successfully... 🙋
+Model loaded successfully... 🙋
+optimizer: AdamW(lr=0.0001, momentum=0.937) with parameter groups 39 weight(decay=0.0), 40 weight(decay=0.00421875), 40 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 4 dataloader workers
+Logging results to D:\Vehicle_MEX_Dataset\runs\classify\Vehicle_MEX_Dataset\Baseline_model-3
 Starting training for 200 epochs...
 
       Epoch    GPU_mem       loss  Instances       Size
-      1/200      4.79G     0.2047         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.5it/s 4:08
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.2it/s 2.6s
-                   all       0.89      0.993
+      1/200      4.79G     0.5928         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.6it/s 5:12
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.3it/s 1.9s
+                   all      0.617      0.815
 
       Epoch    GPU_mem       loss  Instances       Size
-      2/200      4.13G     0.1776         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.0it/s 4:41
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.9it/s 2.3s
-                   all       0.92      0.993
+      2/200      4.13G     0.4599         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.0it/s 6:15
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.5it/s 1.9s
+                   all       0.68      0.842
 
       Epoch    GPU_mem       loss  Instances       Size
-      3/200      4.26G     0.1247         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.9it/s 4:46
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.5it/s 2.5s
-                   all      0.936      0.994
+      3/200      4.26G     0.3589         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.1it/s 5:55
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.4it/s 1.9s
+                   all      0.696      0.836
 
       Epoch    GPU_mem       loss  Instances       Size
-      4/200      4.26G    0.09617         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.7it/s 5:04
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.8it/s 2.4s
-                   all      0.935      0.995
+      4/200      4.26G     0.2797         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.3it/s 5:38
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.7it/s 1.8s
+                   all      0.699      0.824
 
       Epoch    GPU_mem       loss  Instances       Size
-      5/200      4.26G    0.07157         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.6it/s 5:12
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.3it/s 2.5s
-                   all       0.93      0.995
+      5/200      4.26G     0.2228         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.4it/s 5:26
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.6it/s 1.8s
+                   all      0.704      0.823
 
       Epoch    GPU_mem       loss  Instances       Size
-      6/200      4.26G    0.05744         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.4it/s 5:26
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 5.3it/s 3.0s
-                   all      0.929      0.996
+      6/200      4.26G     0.1849         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.3it/s 5:38
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.9it/s 1.7s
+                   all      0.707      0.828
 
       Epoch    GPU_mem       loss  Instances       Size
-      7/200      4.26G    0.05971         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.5it/s 5:22
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.7it/s 2.4s
-                   all      0.931      0.996
+      7/200      4.26G     0.1801         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.3it/s 5:38
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.6it/s 1.8s
+                   all       0.71      0.826
 
       Epoch    GPU_mem       loss  Instances       Size
-      8/200      4.26G    0.05571         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.5it/s 5:20
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.1it/s 2.6s
-                   all      0.935      0.996
+      8/200      4.26G     0.1557         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.2it/s 5:47
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 5.7it/s 2.1s
+                   all      0.712      0.824
 
       Epoch    GPU_mem       loss  Instances       Size
-      9/200      4.26G    0.05325         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.3it/s 5:33
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.2it/s 2.6s
-                   all      0.927      0.995
+      9/200      4.26G     0.1443         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.2it/s 5:44
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.1it/s 2.0s
+                   all      0.709      0.824
 
       Epoch    GPU_mem       loss  Instances       Size
-     10/200      4.26G    0.04953         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.3it/s 5:41
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.3it/s 2.5s
-                   all      0.934      0.992
+     10/200      4.26G     0.1337         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.3it/s 5:36
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.8it/s 1.8s
+                   all      0.713      0.826
 
       Epoch    GPU_mem       loss  Instances       Size
-     11/200      4.26G    0.04724         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.2it/s 5:44
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.5it/s 2.5s
-                   all      0.933      0.996
+     11/200      4.26G     0.1223         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.8it/s 4:50
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 5.7it/s 2.1s
+                   all      0.728      0.821
 
       Epoch    GPU_mem       loss  Instances       Size
-     12/200      4.26G     0.0469         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.3it/s 5:38
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.8it/s 2.4s
-                   all      0.933      0.995
+     12/200      4.26G     0.1205         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.9it/s 4:47
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.8it/s 1.8s
+                   all      0.717      0.824
 
       Epoch    GPU_mem       loss  Instances       Size
-     13/200      4.26G    0.04736         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.1it/s 5:56
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.0it/s 2.7s
-                   all      0.931      0.998
+     13/200      4.26G     0.1171         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.8it/s 4:49
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 7.2it/s 1.7s
+                   all      0.721       0.82
 
       Epoch    GPU_mem       loss  Instances       Size
-     14/200      4.26G    0.04804         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.4it/s 5:29
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.6it/s 2.4s
-                   all      0.933      0.994
+     14/200      4.26G     0.1145         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.0it/s 4:40
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.9it/s 1.7s
+                   all       0.72      0.823
 
       Epoch    GPU_mem       loss  Instances       Size
-     15/200      4.26G    0.04396         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.6it/s 5:06
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.2it/s 2.6s
-                   all       0.93      0.994
+     15/200      4.26G     0.1066         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.9it/s 4:45
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.9it/s 1.7s
+                   all      0.718      0.821
 
       Epoch    GPU_mem       loss  Instances       Size
-     16/200      4.26G    0.04517         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.0it/s 6:11
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.3it/s 2.5s
-                   all       0.93      0.995
+     16/200      4.26G     0.1012         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.0it/s 4:38
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 7.0it/s 1.7s
+                   all      0.713      0.824
 
       Epoch    GPU_mem       loss  Instances       Size
-     17/200      4.26G    0.04329         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.3it/s 5:33
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.8it/s 2.3s
-                   all      0.934      0.995
+     17/200      4.26G      0.097         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.9it/s 4:43
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.8it/s 1.8s
+                   all      0.717      0.826
 
       Epoch    GPU_mem       loss  Instances       Size
-     18/200      4.26G    0.04165         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.1it/s 4:34
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.8it/s 2.3s
-                   all      0.937      0.996
+     18/200      4.26G    0.09674         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.8it/s 4:52
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.6it/s 1.8s
+                   all      0.718      0.829
 
       Epoch    GPU_mem       loss  Instances       Size
-     19/200      4.26G    0.03798         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.1it/s 4:34
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.7it/s 2.4s
-                   all      0.937      0.996
+     19/200      4.26G    0.08707         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.1it/s 5:55
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.8it/s 1.8s
+                   all      0.718      0.824
 
       Epoch    GPU_mem       loss  Instances       Size
-     20/200      4.26G    0.03816         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.1it/s 4:31
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.9it/s 2.3s
-                   all      0.934      0.998
+     20/200      4.26G    0.08501         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.1it/s 5:57
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.7it/s 1.8s
+                   all      0.718      0.831
 
       Epoch    GPU_mem       loss  Instances       Size
-     21/200      4.26G    0.03885         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.1it/s 4:33
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 7.0it/s 2.3s
-                   all      0.931      0.998
+     21/200      4.26G    0.08274         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.1it/s 5:59
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.8it/s 1.8s
+                   all      0.715      0.831
 
       Epoch    GPU_mem       loss  Instances       Size
-     22/200      4.26G    0.04493         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.1it/s 4:31
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 7.0it/s 2.3s
-                   all      0.936      0.994
+     22/200      4.26G     0.0849         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.2it/s 5:46
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.0it/s 2.0s
+                   all      0.718      0.826
 
       Epoch    GPU_mem       loss  Instances       Size
-     23/200      4.26G     0.0548         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.1it/s 4:29
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.7it/s 2.4s
-                   all      0.931      0.996
+     23/200      4.26G    0.08147         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.3it/s 5:40
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 5.9it/s 2.0s
+                   all      0.725      0.824
 
       Epoch    GPU_mem       loss  Instances       Size
-     24/200      4.26G    0.05033         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.1it/s 4:33
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 7.0it/s 2.3s
-                   all       0.93      0.995
+     24/200      4.26G    0.07115         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.7it/s 5:03
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.3it/s 1.9s
+                   all      0.721      0.824
 
       Epoch    GPU_mem       loss  Instances       Size
-     25/200      4.26G    0.05456         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.0it/s 4:35
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.9it/s 2.3s
-                   all      0.933      0.995
+     25/200      4.26G    0.07683         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.5it/s 5:19
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.3it/s 1.9s
+                   all      0.723      0.821
 
       Epoch    GPU_mem       loss  Instances       Size
-     26/200      4.26G    0.05106         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.8it/s 4:49
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.6it/s 2.4s
-                   all      0.931      0.995
+     26/200      4.26G    0.07188         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.6it/s 5:11
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 6.2it/s 1.9s
+                   all      0.721      0.824
 
       Epoch    GPU_mem       loss  Instances       Size
-     27/200      4.26G    0.05201         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.5it/s 5:15
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.1it/s 2.6s
-                   all      0.934      0.995
+     27/200      4.26G    0.07194         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.7it/s 4:58
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 7.1it/s 1.7s
+                   all       0.72      0.821
 
       Epoch    GPU_mem       loss  Instances       Size
-     28/200      4.26G    0.05085         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.4it/s 5:24
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.1it/s 2.6s
-                   all      0.933      0.995
+     28/200      4.26G    0.07008         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.0it/s 4:37
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 7.0it/s 1.7s
+                   all       0.72       0.82
 
       Epoch    GPU_mem       loss  Instances       Size
-     29/200      4.26G    0.04684         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.5it/s 5:20
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.0it/s 2.7s
-                   all      0.933      0.996
+     29/200      4.26G    0.06421         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.0it/s 4:37
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 7.1it/s 1.7s
+                   all       0.72      0.824
 
       Epoch    GPU_mem       loss  Instances       Size
-     30/200      4.26G    0.04412         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.7it/s 5:04
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.6it/s 2.4s
-                   all      0.934      0.996
+     30/200      4.26G    0.06227         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.0it/s 4:35
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 7.1it/s 1.7s
+                   all       0.72      0.823
 
       Epoch    GPU_mem       loss  Instances       Size
-     31/200      4.26G    0.04487         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.8it/s 4:49
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.7it/s 2.4s
-                   all      0.934      0.996
+     31/200      4.26G    0.06288         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.2it/s 4:25
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 7.1it/s 1.7s
+                   all       0.72      0.823
 
       Epoch    GPU_mem       loss  Instances       Size
-     32/200      4.26G    0.04771         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.6it/s 5:12
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 6.0it/s 2.7s
-                   all      0.935      0.996
+     32/200      4.26G    0.06166         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.2it/s 4:26
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 7.0it/s 1.7s
+                   all      0.721      0.823
 
       Epoch    GPU_mem       loss  Instances       Size
-     33/200      4.26G    0.04418         17        640: 100% ━━━━━━━━━━━━ 1112/1112 3.6it/s 5:08
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 5.7it/s 2.8s
-                   all      0.935      0.996
-EarlyStopping: Training stopped early as no improvement observed in last 15 epochs. Best results observed at epoch 18, best model saved as best.pt.
-To update EarlyStopping(patience=15) pass a new patience value, i.e. `patience=300` or use `patience=0` to disable EarlyStopping.
+     33/200      4.26G    0.05947         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.2it/s 4:24
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 7.1it/s 1.7s
+                   all       0.72      0.824
 
-33 epochs completed in 2.872 hours.
-Optimizer stripped from D:\Vehicle_MEX_Dataset\runs\classify\Vehicle_MEX_Dataset\Improvement_1\weights\last.pt, 11.1MB
-Optimizer stripped from D:\Vehicle_MEX_Dataset\runs\classify\Vehicle_MEX_Dataset\Improvement_1\weights\best.pt, 11.1MB
+      Epoch    GPU_mem       loss  Instances       Size
+     34/200      4.26G    0.06059         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.2it/s 4:24
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 7.0it/s 1.7s
+                   all       0.72      0.824
 
-Validating D:\Vehicle_MEX_Dataset\runs\classify\Vehicle_MEX_Dataset\Improvement_1\weights\best.pt...
+      Epoch    GPU_mem       loss  Instances       Size
+     35/200      4.26G     0.0617         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.2it/s 4:23
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 7.1it/s 1.7s
+                   all      0.717      0.826
+
+      Epoch    GPU_mem       loss  Instances       Size
+     36/200      4.26G    0.05904         17        640: 100% ━━━━━━━━━━━━ 1112/1112 4.1it/s 4:32
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 5.0it/s 2.4s
+                   all      0.715      0.826
+EarlyStopping: Training stopped early as no improvement observed in last 25 epochs. Best results observed at epoch 11, best model saved as best.pt.
+To update EarlyStopping(patience=25) pass a new patience value, i.e. `patience=300` or use `patience=0` to disable EarlyStopping.
+
+36 epochs completed in 3.154 hours.
+Optimizer stripped from D:\Vehicle_MEX_Dataset\runs\classify\Vehicle_MEX_Dataset\Baseline_model-3\weights\last.pt, 11.1MB
+Optimizer stripped from D:\Vehicle_MEX_Dataset\runs\classify\Vehicle_MEX_Dataset\Baseline_model-3\weights\best.pt, 11.1MB
+
+Validating D:\Vehicle_MEX_Dataset\runs\classify\Vehicle_MEX_Dataset\Baseline_model-3\weights\best.pt...
 Ultralytics 8.4.83  Python-3.12.9 torch-2.3.1 CUDA:0 (NVIDIA GeForce RTX 4060 Laptop GPU, 8188MiB)
 YOLO26s-cls summary (fused): 47 layers, 5,453,343 parameters, 0 gradients, 12.0 GFLOPs
 train: D:\Vehicle_MEX_Dataset\Vehicle_classification.v1\train... found 30014 images in 15 classes
-val: D:\Vehicle_MEX_Dataset\Vehicle_classification.v1\valid... found 830 images in 15 classes
-test: D:\Vehicle_MEX_Dataset\Vehicle_classification.v1\test... found 742 images in 15 classes
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 16/16 5.5it/s 2.9s
-                   all      0.937      0.996
-Speed: 0.9ms preprocess, 2.5ms inference, 0.0ms loss, 0.0ms postprocess per image
-Results saved to D:\Vehicle_MEX_Dataset\runs\classify\Vehicle_MEX_Dataset\Improvement_1
+ERROR val: D:\Vehicle_MEX_Dataset\Vehicle_classification.v1\valid... found 621 images in 13 classes (requires 15 classes, not 13)
+ERROR test: D:\Vehicle_MEX_Dataset\Vehicle_classification.v1\test... found 612 images in 13 classes (requires 15 classes, not 13)
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 12/12 5.7it/s 2.1s
+                   all      0.725      0.823
+Speed: 0.8ms preprocess, 2.5ms inference, 0.0ms loss, 0.0ms postprocess per image
+Results saved to D:\Vehicle_MEX_Dataset\runs\classify\Vehicle_MEX_Dataset\Baseline_model-3
 Training completed successfully... 🎉
 📊 Training metrics:
 ultralytics.utils.metrics.ClassifyMetrics object with attributes:
 
-confusion_matrix: <ultralytics.utils.metrics.ConfusionMatrix object at 0x000001A110EFAAB0>
+confusion_matrix: <ultralytics.utils.metrics.ConfusionMatrix object at 0x00000231994F9D90>
 curves: []
 curves_results: []
-fitness: 0.9668674468994141
+fitness: 0.7737520039081573
 keys: ['metrics/accuracy_top1', 'metrics/accuracy_top5']
-results_dict: {'metrics/accuracy_top1': 0.9373493790626526, 'metrics/accuracy_top5': 0.9963855147361755, 'fitness': 0.9668674468994141}
-save_dir: WindowsPath('D:/Vehicle_MEX_Dataset/runs/classify/Vehicle_MEX_Dataset/Improvement_1')
-speed: {'preprocess': 0.9283662650678783, 'inference': 2.482501927706068, 'loss': 0.000289277102046433, 'postprocess': 0.0009672289082348482}
-top1: 0.9373493790626526
-top5: 0.9963855147361755
+results_dict: {'metrics/accuracy_top1': 0.7246376872062683, 'metrics/accuracy_top5': 0.8228663206100464, 'fitness': 0.7737520039081573}
+save_dir: WindowsPath('D:/Vehicle_MEX_Dataset/runs/classify/Vehicle_MEX_Dataset/Baseline_model-3')
+speed: {'preprocess': 0.8226677938430059, 'inference': 2.451451851846875, 'loss': 0.002356199692933252, 'postprocess': 0.004518679545156736}
+top1: 0.7246376872062683
+top5: 0.8228663206100464
 Ultralytics 8.4.83  Python-3.12.9 torch-2.3.1 CUDA:0 (NVIDIA GeForce RTX 4060 Laptop GPU, 8188MiB)
 YOLO26s-cls summary (fused): 47 layers, 5,453,343 parameters, 0 gradients, 12.0 GFLOPs
 train: D:\Vehicle_MEX_Dataset\Vehicle_classification.v1\train... found 30014 images in 15 classes
-val: D:\Vehicle_MEX_Dataset\Vehicle_classification.v1\valid... found 830 images in 15 classes
-test: D:\Vehicle_MEX_Dataset\Vehicle_classification.v1\test... found 742 images in 15 classes
-val: Fast image access  (ping: 0.10.0 ms, read: 567.1195.1 MB/s, size: 63.4 KB)
-val: Scanning D:\Vehicle_MEX_Dataset\Vehicle_classification.v1\valid... 830 images, 0 corrupt: 100% ━━━━━━━━━━━━ 830/830  0.0s
+ERROR val: D:\Vehicle_MEX_Dataset\Vehicle_classification.v1\valid... found 621 images in 13 classes (requires 15 classes, not 13)
+ERROR test: D:\Vehicle_MEX_Dataset\Vehicle_classification.v1\test... found 612 images in 13 classes (requires 15 classes, not 13)
+val: Fast image access  (ping: 0.10.0 ms, read: 598.6194.8 MB/s, size: 63.4 KB)
+val: Scanning D:\Vehicle_MEX_Dataset\Vehicle_classification.v1\valid... 621 images, 0 corrupt: 100% ━━━━━━━━━━━━ 621/621  0.0s
 Model loaded successfully... 🙋
 Model loaded successfully... 🙋
 Model loaded successfully... 🙋
@@ -211,21 +240,20 @@ Model loaded successfully... 🙋
 Model loaded successfully... 🙋
 Model loaded successfully... 🙋
 Model loaded successfully... 🙋
-               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 52/52 7.6it/s 6.8s
-                   all      0.937      0.996
-Speed: 1.3ms preprocess, 4.2ms inference, 0.0ms loss, 0.0ms postprocess per image
-Results saved to D:\Vehicle_MEX_Dataset\runs\classify\val-3
+               classes   top1_acc   top5_acc: 100% ━━━━━━━━━━━━ 39/39 7.5it/s 5.2s
+                   all      0.725      0.824
+Speed: 1.2ms preprocess, 4.1ms inference, 0.0ms loss, 0.0ms postprocess per image
+Results saved to D:\Vehicle_MEX_Dataset\runs\classify\val-2
 📊 Validation metrics:
 ultralytics.utils.metrics.ClassifyMetrics object with attributes:
 
-confusion_matrix: <ultralytics.utils.metrics.ConfusionMatrix object at 0x000001A11C931CD0>
+confusion_matrix: <ultralytics.utils.metrics.ConfusionMatrix object at 0x00000231900D2B70>
 curves: []
 curves_results: []
-fitness: 0.9668674468994141
+fitness: 0.7745571732521057
 keys: ['metrics/accuracy_top1', 'metrics/accuracy_top5']
-results_dict: {'metrics/accuracy_top1': 0.9373493790626526, 'metrics/accuracy_top5': 0.9963855147361755, 'fitness': 0.9668674468994141}
-save_dir: WindowsPath('D:/Vehicle_MEX_Dataset/runs/classify/val-3')
-speed: {'preprocess': 1.3348406024350146, 'inference': 4.198439277090337, 'loss': 0.0012007229088339955, 'postprocess': 0.0032790360940025604}
-top1: 0.9373493790626526
-top5: 0.9963855147361755
-(YOLO-Torch-2.1_ultralytics) PS D:\Vehicle_MEX_Dataset>
+results_dict: {'metrics/accuracy_top1': 0.7246376872062683, 'metrics/accuracy_top5': 0.8244766592979431, 'fitness': 0.7745571732521057}
+save_dir: WindowsPath('D:/Vehicle_MEX_Dataset/runs/classify/val-2')
+speed: {'preprocess': 1.249291787464183, 'inference': 4.132148309166213, 'loss': 0.0021541062794961695, 'postprocess': 0.005130434773683147}
+top1: 0.7246376872062683
+top5: 0.8244766592979431

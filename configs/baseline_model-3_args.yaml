@@ -4,7 +4,7 @@ model: best.pt
 data: Vehicle_classification.v1
 epochs: 200
 time: null
-patience: 15
+patience: 25
 batch: -1
 imgsz: 640
 save: true
@@ -13,7 +13,7 @@ cache: false
 device: null
 workers: 4
 project: Vehicle_MEX_Dataset
-name: Improvement_1
+name: Baseline_model-3
 exist_ok: false
 pretrained: true
 optimizer: AdamW
@@ -33,7 +33,7 @@ multi_scale: 0.0
 compile: false
 overlap_mask: true
 mask_ratio: 4
-dropout: 0.4
+dropout: 0.5
 val: true
 split: val
 save_json: false
@@ -55,7 +55,7 @@ retina_masks: false
 embed: null
 show: false
 save_frames: false
-save_txt: false
+save_txt: true
 save_conf: false
 save_crop: false
 show_labels: true
@@ -100,7 +100,7 @@ flipud: 0.0
 fliplr: 0.5
 bgr: 0.0
 mosaic: 1.0
-mixup: 0.0
+mixup: 0.2
 cutmix: 0.0
 copy_paste: 0.0
 copy_paste_mode: flip
@@ -108,4 +108,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: tracktrack.yaml
-save_dir: D:\Vehicle_MEX_Dataset\runs\classify\Vehicle_MEX_Dataset\Improvement_1
+save_dir: D:\Vehicle_MEX_Dataset\runs\classify\Vehicle_MEX_Dataset\Baseline_model-3
