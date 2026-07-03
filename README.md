@@ -1,4 +1,4 @@
-# 🚗 Vehicle_MEX_Model — Fine-Grained Vehicle Classification (YOLO-CLS)
+# 🚗 Vehicle_MEX_Model — Clasificación de vehículos
 
 <div align="center">
   <img src="assets/train_batch0.jpg" width="31%" alt="Vehicle_MEX training batch 0"/>
@@ -9,15 +9,17 @@
 <div align="center">
 
 [![Framework](https://img.shields.io/badge/Framework-Ultralytics%20YOLO-111827)](https://github.com/ultralytics/ultralytics)
-[![Task](https://img.shields.io/badge/Task-Image%20Classification-2563EB)](#-overview)
-[![Input](https://img.shields.io/badge/Input-640x640-0EA5E9)](#-technical-specs)
-[![Tuning](https://img.shields.io/badge/HPO-Ray%20Tune%20%2B%20Optuna-7C3AED)](#-hyperparameter-tuning-hpo)
+[![Tarea](https://img.shields.io/badge/Tarea-Clasificaci%C3%B3n%20de%20im%C3%A1genes-2563EB)](#descripcion-general)
+[![Entrada](https://img.shields.io/badge/Entrada-640x640-0EA5E9)](#especificaciones-tecnicas)
+[![HPO](https://img.shields.io/badge/HPO-Ray%20Tune%20%2B%20Optuna-7C3AED)](#ajuste-de-hiperpar%C3%A1metros-hpo)
 
 </div>
 
-## 📌 Overview
-Este repositorio documenta el entrenamiento de un **modelo baseline** para **clasificación de vehículos** (fine-grained) usando **Ultralytics YOLO (modo classify)** sobre el dataset `Vehicle_MEX_Dataset`.  
-Incluye scripts reproducibles, notebooks de aumento de datos, métricas, y visualizaciones (sin subir el dataset completo de imágenes).
+<a id="descripcion-general"></a>
+
+## 📌 Descripción general
+Este repositorio documenta el entrenamiento de un **modelo baseline** para **clasificación de vehículos** (grano fino) usando **Ultralytics YOLO (modo classify)** sobre el dataset `Vehicle_MEX_Dataset`.  
+Incluye scripts reproducibles, notebooks de aumento de datos, métricas y visualizaciones (sin subir el dataset completo de imágenes).
 
 ## 📦 Dataset
 - **Dataset original (descarga):** https://data.mendeley.com/datasets/gbk6gnv245/1
@@ -45,7 +47,7 @@ Vehicle_classification.v1/
 - ✅ Proponer y ejecutar mejoras con **regularización** y **aumento de datos**.
 - ✅ Preparar un flujo opcional de **búsqueda de hiperparámetros (HPO)** para acelerar la convergencia y mejorar precisión.
 
-## 🧠 Method (Training Pipeline)
+## 🧠 Método (Pipeline de entrenamiento)
 **Etapas del flujo:**
 1. **Preprocesamiento y balanceo** con `notebooks/Data_augmenter.ipynb`
 2. Entrenamiento con **YOLO-CLS** (Ultralytics)
@@ -53,8 +55,8 @@ Vehicle_classification.v1/
 4. Ajustes manuales e iteración
 5. (Opcional) **HPO con Ray Tune + Optuna** para encontrar mejores hiperparámetros
 
-## 🧾 Model Weights (Download & Inference)
-Este repositorio incluye el archivo de pesos entrenados listo para descarga:
+## 🧾 Pesos del modelo (descarga e inferencia)
+Este repositorio incluye el archivo de pesos entrenados listo para su descarga:
 - `weights/best.pt`
 
 ### 📥 Obtener los pesos
@@ -83,7 +85,7 @@ pred = model.predict(source="ruta/a/imagen.jpg", imgsz=640)
 yolo classify predict model=weights/best.pt source="ruta/a/imagen.jpg" imgsz=640
 ```
 
-## 📈 Results (Improvement_1 — Best Model)
+## 📈 Resultados (Improvement_1 — Mejor modelo)
 Métricas reportadas para el modelo entrenado (`weights/best.pt`):
 
 | Metric | Value |
@@ -91,13 +93,6 @@ Métricas reportadas para el modelo entrenado (`weights/best.pt`):
 | Fitness | 0.9668674468994141 |
 | Top-1 Accuracy | 0.9373493790626526 |
 | Top-5 Accuracy | 0.9963855147361755 |
-
-## 📈 Results (Baseline_model-3)
-Resultados reportados en `results/Terminal.txt` y visualizados en `results/`.
-
-- **Top-1 Accuracy:** 0.7246
-- **Top-5 Accuracy:** 0.8245
-- **Best epoch (early stopping):** 11
 
 <div align="center">
   <img src="results/results.png" width="80%" alt="Training curves"/>
@@ -109,12 +104,12 @@ Resultados reportados en `results/Terminal.txt` y visualizados en `results/`.
   <img src="results/confusion_matrix_normalized.png" width="48%" alt="Confusion matrix normalized"/>
 </div>
 
-## 🎞️ Demo (Training Batches)
+## 🎞️ Demo (lotes de entrenamiento)
 <div align="center">
   <img src="assets/demo.gif" width="80%" alt="Training batches demo"/>
 </div>
 
-## 🧩 Project Structure
+## 🧩 Estructura del proyecto
 ```text
 Vehicle_MEX_Model/
 ├── assets/                      # Imágenes/GIF ligeros para README (no dataset completo)
@@ -128,7 +123,7 @@ Vehicle_MEX_Model/
 └── README.md
 ```
 
-## 🛠️ Installation
+## 🛠️ Instalación
 ### 1) Clonar
 ```bash
 git clone <TU_URL_DE_GITHUB>/Vehicle_MEX_Model.git
@@ -155,7 +150,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 🚀 Training
+## 🚀 Entrenamiento
 Script principal:
 - `scripts/1_Classification.py`
 
@@ -164,7 +159,7 @@ Ejemplo:
 python scripts/1_Classification.py
 ```
 
-## 🧪 Dataset Augmentation & Balancing
+## 🧪 Aumento y balanceo del dataset
 Notebook:
 - `notebooks/Data_augmenter.ipynb`
 
@@ -172,46 +167,39 @@ Incluye:
 - selector de carpetas (local)
 - análisis automático de desbalance por clase
 - previsualización de augmentations
-- export a estructura YOLO-CLS con imágenes 640x640 (padding + Lanczos)
+- exportación a estructura YOLO-CLS con imágenes 640x640 (padding + Lanczos)
 
-## 🧬 Hyperparameter Tuning (HPO)
-Script:
-- `scripts/1_Classification_Optuna.py`
+<a id="ajuste-de-hiperparámetros-hpo"></a>
 
-Este flujo usa `model.tune(..., use_ray=True)` (Ray Tune) y permite búsqueda tipo Optuna.  
-Requiere instalar dependencias adicionales:
-```bash
-pip install -U "ray[tune]" optuna
-```
-
-## ✨ Main Features
+## ✨ Características principales
 - 🧱 Reproducibilidad: logs + configs (`configs/`, `results/`)
 - 🧰 Aumentos realistas orientados a vehículos (rotación leve, perspectiva, brillo/contraste, ruido)
 - 🧯 Regularización agresiva (dropout, weight decay, warmup)
 - 🧪 HPO opcional con Ray Tune + Optuna
 
-## 🧾 Technical Specs
+<a id="especificaciones-tecnicas"></a>
+
+## 🧾 Especificaciones técnicas
 - **Framework:** Ultralytics YOLO (classification)
 - **Input:** 640×640 (con padding para conservar proporciones)
 - **Optimizer:** AdamW
 - **Scheduler:** Cosine LR (si se habilita en los scripts)
 
-## 🏙️ Applications
+## 🏙️ Aplicaciones
 - 🚦 Clasificación automática de tipos de vehículos en escenarios urbanos y carreteros
 - 🛣️ Analítica de tráfico por categoría
 - 🧾 Inventario vehicular y monitoreo en infraestructura
 - 🔍 Soporte a sistemas ITS (Intelligent Transportation Systems)
 
 ## 🧑‍🔬 Research Team
-Formato inspirado en: https://github.com/JaGuzmanT/SaltSpot
 
 <table align="center">
   <thead>
     <tr>
       <th align="center" width="120">Photo</th>
-      <th align="left">Researcher</th>
-      <th align="left">Affiliation</th>
-      <th align="left">Contact</th>
+      <th align="left">Investigador(a)</th>
+      <th align="left">Afiliación</th>
+      <th align="left">Contacto</th>
     </tr>
   </thead>
   <tbody>
@@ -221,7 +209,7 @@ Formato inspirado en: https://github.com/JaGuzmanT/SaltSpot
       </td>
       <td>
         <b>Dr. José Alberto Guzmán Torres</b> :mexico:
-        <sub>Engineering Applications &amp; Artificial Intelligence</sub>
+        <sub>Aplicaciones de ingeniería e inteligencia artificial</sub>
       </td>
       <td>
         <a href="http://www.siiia.com.mx"><img alt="Company: SIIIA MATH" src="https://img.shields.io/badge/%F0%9F%8F%A2%20Company-SIIIA%20MATH-0B1B3A"></a>
@@ -239,7 +227,7 @@ Formato inspirado en: https://github.com/JaGuzmanT/SaltSpot
       </td>
       <td>
         <b>Dr. Francisco Javier Domínguez Mota</b> :mexico:
-        <sub>Applied Mathematics &amp; Finite Difference Methods</sub>
+        <sub>Matemática aplicada y métodos de diferencias finitas</sub>
       </td>
       <td>
         <a href="http://www.siiia.com.mx"><img alt="Company: SIIIA MATH" src="https://img.shields.io/badge/%F0%9F%8F%A2%20Company-SIIIA%20MATH-0B1B3A"></a>
@@ -257,7 +245,7 @@ Formato inspirado en: https://github.com/JaGuzmanT/SaltSpot
       </td>
       <td>
         <b>Dra. Elia M. Alonso Guzmán</b> :mexico:
-        <sub>Civil Engineering &amp; Materials Science</sub>
+        <sub>Ingeniería civil y ciencia de materiales</sub>
       </td>
       <td>
         <a href="http://www.umich.mx"><img alt="University: UMSNH" src="https://img.shields.io/badge/%F0%9F%8E%93%20University-UMSNH-1A3A6B"></a>
@@ -274,7 +262,7 @@ Formato inspirado en: https://github.com/JaGuzmanT/SaltSpot
       </td>
       <td>
         <b>Dr. Gerardo Tinoco Guerrero</b> :mexico:
-        <sub>Numerical Methods &amp; Computational Mathematics</sub>
+        <sub>Métodos numéricos y matemática computacional</sub>
       </td>
       <td>
         <a href="http://www.siiia.com.mx"><img alt="Company: SIIIA MATH" src="https://img.shields.io/badge/%F0%9F%8F%A2%20Company-SIIIA%20MATH-0B1B3A"></a>
@@ -292,7 +280,7 @@ Formato inspirado en: https://github.com/JaGuzmanT/SaltSpot
       </td>
       <td>
         <b>Dr. José Gerardo Tinoco Ruíz</b> :mexico:
-        <sub>Applied Mathematics &amp; Computational Modeling</sub>
+        <sub>Matemática aplicada y modelado computacional</sub>
       </td>
       <td>
         <a href="http://www.umich.mx"><img alt="University: UMSNH" src="https://img.shields.io/badge/%F0%9F%8E%93%20University-UMSNH-1A3A6B"></a>
@@ -309,7 +297,7 @@ Formato inspirado en: https://github.com/JaGuzmanT/SaltSpot
       </td>
       <td>
         <b>Dr. Heriberto Árias Rojas</b> :mexico:
-        <sub>Engineering Applications</sub>
+        <sub>Aplicaciones de ingeniería</sub>
       </td>
       <td>
         <a href="http://www.siiia.com.mx"><img alt="Company: SIIIA MATH" src="https://img.shields.io/badge/%F0%9F%8F%A2%20Company-SIIIA%20MATH-0B1B3A"></a>
@@ -324,5 +312,5 @@ Formato inspirado en: https://github.com/JaGuzmanT/SaltSpot
   </tbody>
 </table>
 
-## ⚖️ License
-MIT License. See [LICENSE](LICENSE).
+## ⚖️ Licencia
+Licencia MIT. Ver [LICENSE](LICENSE).
