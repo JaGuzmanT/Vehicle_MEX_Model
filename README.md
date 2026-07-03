@@ -53,6 +53,45 @@ Vehicle_classification.v1/
 4. Ajustes manuales e iteración
 5. (Opcional) **HPO con Ray Tune + Optuna** para encontrar mejores hiperparámetros
 
+## 🧾 Model Weights (Download & Inference)
+Este repositorio incluye el archivo de pesos entrenados listo para descarga:
+- `weights/best.pt`
+
+### 📥 Obtener los pesos
+- **Opción A (recomendado): clonar el repo**
+```bash
+git clone <TU_URL_DE_GITHUB>/Vehicle_MEX_Model.git
+cd Vehicle_MEX_Model
+```
+- **Opción B: descarga directa desde GitHub**
+1) Abre `weights/best.pt` en GitHub  
+2) Descarga con el botón de descarga o usa el enlace raw (ejemplo):
+```text
+https://raw.githubusercontent.com/<TU_USUARIO>/Vehicle_MEX_Model/main/weights/best.pt
+```
+
+### 🧪 Cargar pesos y ejecutar inferencia (Python)
+```python
+from ultralytics import YOLO
+
+model = YOLO("weights/best.pt")
+pred = model.predict(source="ruta/a/imagen.jpg", imgsz=640)
+```
+
+### 🧪 Inferencia (CLI)
+```bash
+yolo classify predict model=weights/best.pt source="ruta/a/imagen.jpg" imgsz=640
+```
+
+## 📈 Results (Improvement_1 — Best Model)
+Métricas reportadas para el modelo entrenado (`weights/best.pt`):
+
+| Metric | Value |
+|---|---:|
+| Fitness | 0.9668674468994141 |
+| Top-1 Accuracy | 0.9373493790626526 |
+| Top-5 Accuracy | 0.9963855147361755 |
+
 ## 📈 Results (Baseline_model-3)
 Resultados reportados en `results/Terminal.txt` y visualizados en `results/`.
 
@@ -82,6 +121,7 @@ Vehicle_MEX_Model/
 ├── configs/                     # Configuraciones usadas en entrenamientos
 ├── notebooks/                   # Notebooks de análisis/augmentación
 ├── results/                     # Curvas, matrices, logs, CSV de resultados
+├── weights/                     # Pesos del modelo entrenado (best.pt)
 ├── scripts/                     # Scripts de entrenamiento y HPO
 ├── requirements.txt
 ├── .gitignore
@@ -286,4 +326,3 @@ Formato inspirado en: https://github.com/JaGuzmanT/SaltSpot
 
 ## ⚖️ License
 MIT License. See [LICENSE](LICENSE).
-

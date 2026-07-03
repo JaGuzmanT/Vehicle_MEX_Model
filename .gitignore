@@ -21,5 +21,3 @@ train_augmented/
 train_augmented*/
 
 results/*.pt
-weights/
-
