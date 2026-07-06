@@ -41,7 +41,7 @@ Vehicle_classification.v1/
     └── ...
 ```
 
-## 🎯 Objetivos
+## 🎯 Objectives
 - ✅ Entrenar un **baseline reproducible** para clasificación de vehículos.
 - ✅ Identificar errores por clase usando **matriz de confusión**.
 - ✅ Proponer y ejecutar mejoras con **regularización** y **aumento de datos**.
@@ -205,7 +205,7 @@ Incluye:
   <tbody>
     <tr>
       <td align="center" width="120">
-        <img src="https://raw.githubusercontent.com/JaGuzmanT/SaltSpot/main/Public/docs/Images/JAGT1.jpg" alt="Dr. José Alberto Guzmán Torres" width="96" height="96">
+        <img src="https://raw.githubusercontent.com/JaGuzmanT/Vehicle_MEX_Model/main/assets/JAGT1.jpg" alt="Dr. José Alberto Guzmán Torres" width="96" height="96">
       </td>
       <td>
         <b>Dr. José Alberto Guzmán Torres</b> :mexico:
@@ -223,7 +223,7 @@ Incluye:
     </tr>
     <tr>
       <td align="center" width="120">
-        <img src="https://raw.githubusercontent.com/JaGuzmanT/SaltSpot/main/Public/docs/Images/FJDM1.jpg" alt="Dr. Francisco Javier Domínguez Mota" width="96" height="96">
+        <img src="https://raw.githubusercontent.com/JaGuzmanT/Vehicle_MEX_Model/main/assets/dmota.webp" alt="Dr. Francisco Javier Domínguez Mota" width="96" height="96">
       </td>
       <td>
         <b>Dr. Francisco Javier Domínguez Mota</b> :mexico:
@@ -241,7 +241,7 @@ Incluye:
     </tr>
     <tr>
       <td align="center" width="120">
-        <img src="https://raw.githubusercontent.com/JaGuzmanT/SaltSpot/main/Public/docs/Images/EMAG.jpg" alt="Dra. Elia M. Alonso Guzmán" width="96" height="96">
+        <img src="https://raw.githubusercontent.com/JaGuzmanT/Vehicle_MEX_Model/main/assets/EMAG.png" alt="Dra. Elia M. Alonso Guzmán" width="96" height="96">
       </td>
       <td>
         <b>Dra. Elia M. Alonso Guzmán</b> :mexico:
@@ -253,12 +253,12 @@ Incluye:
       <td>
         <a href="mailto:elia.alonso@umich.mx"><img alt="Contact" src="https://img.shields.io/badge/%F0%9F%93%A7-Contact-blue"></a>
         <a href="https://orcid.org/0000-0002-8502-4313"><img alt="ORCID 0000-0002-8502-4313" src="https://img.shields.io/badge/ORCID-0000--0002--8502--4313-green"></a>
-        <a href="#"><img alt="ResearchGate Profile" src="https://img.shields.io/badge/ResearchGate-Profile-teal"></a>
+        <a href="https://www.researchgate.net/profile/Elia-Alonso-Guzman"><img alt="ResearchGate Profile" src="https://img.shields.io/badge/ResearchGate-Profile-teal"></a>
       </td>
     </tr>
     <tr>
       <td align="center" width="120">
-        <img src="https://raw.githubusercontent.com/JaGuzmanT/SaltSpot/main/Public/docs/Images/GTG.jpg" alt="Dr. Gerardo Tinoco Guerrero" width="96" height="96">
+        <img src="https://raw.githubusercontent.com/JaGuzmanT/Vehicle_MEX_Model/main/assets/gtinoco.webp" alt="Dr. Gerardo Tinoco Guerrero" width="96" height="96">
       </td>
       <td>
         <b>Dr. Gerardo Tinoco Guerrero</b> :mexico:
@@ -276,24 +276,24 @@ Incluye:
     </tr>
     <tr>
       <td align="center" width="120">
-        <img src="https://raw.githubusercontent.com/JaGuzmanT/SaltSpot/main/Public/docs/Images/JGTR1.jpg" alt="Dr. José Gerardo Tinoco Ruíz" width="96" height="96">
+        <img src="https://raw.githubusercontent.com/JaGuzmanT/Vehicle_MEX_Model/main/assets/WMM.jpg" alt="Dr. Wilfrido Martínez Molina" width="96" height="96">
       </td>
       <td>
-        <b>Dr. José Gerardo Tinoco Ruíz</b> :mexico:
-        <sub>Matemática aplicada y modelado computacional</sub>
+        <b>Dr. Wilfrido Martínez Molina</b> :mexico:
+        <sub>Ingeniería civil y ciencia de materiales</sub>
       </td>
       <td>
         <a href="http://www.umich.mx"><img alt="University: UMSNH" src="https://img.shields.io/badge/%F0%9F%8E%93%20University-UMSNH-1A3A6B"></a>
       </td>
       <td>
-        <a href="mailto:jose.gerardo.tinoco@umich.mx"><img alt="Contact" src="https://img.shields.io/badge/%F0%9F%93%A7-Contact-blue"></a>
-        <a href="https://orcid.org/0000-0002-0866-4798"><img alt="ORCID 0000-0002-0866-4798" src="https://img.shields.io/badge/ORCID-0000--0002--0866--4798-green"></a>
-        <a href="#"><img alt="ResearchGate Profile" src="https://img.shields.io/badge/ResearchGate-Profile-teal"></a>
+        <a href="mailto:wilfrido.martinez@umich.mx"><img alt="Contact" src="https://img.shields.io/badge/%F0%9F%93%A7-Contact-blue"></a>
+        <a href="https://orcid.org/0000-0002-3301-4949"><img alt="ORCID 0000-0002-3301-4949" src="https://img.shields.io/badge/ORCID-0000--0002--3301--4949-green"></a>
+        <a href="https://www.researchgate.net/profile/Wilfrido-Martinez-Molina"><img alt="ResearchGate Profile" src="https://img.shields.io/badge/ResearchGate-Profile-teal"></a>
       </td>
     </tr>
     <tr>
       <td align="center" width="120">
-        <img src="https://raw.githubusercontent.com/JaGuzmanT/SaltSpot/main/Public/docs/Images/Harias.webp" alt="Dr. Heriberto Árias Rojas" width="96" height="96">
+        <img src="https://raw.githubusercontent.com/JaGuzmanT/Vehicle_MEX_Model/main/assets/Harias.webp" alt="Dr. Heriberto Árias Rojas" width="96" height="96">
       </td>
       <td>
         <b>Dr. Heriberto Árias Rojas</b> :mexico:
