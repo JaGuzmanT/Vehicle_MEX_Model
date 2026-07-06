@@ -41,7 +41,7 @@ Vehicle_classification.v1/
     └── ...
 ```
 
-## 🎯 Objectives
+## 🎯 Objetivos
 - ✅ Entrenar un **baseline reproducible** para clasificación de vehículos.
 - ✅ Identificar errores por clase usando **matriz de confusión**.
 - ✅ Proponer y ejecutar mejoras con **regularización** y **aumento de datos**.
